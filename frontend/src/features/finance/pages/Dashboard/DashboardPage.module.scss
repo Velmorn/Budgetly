@@ -1,0 +1,15 @@
+.contentWrapper {
+  display: flex;
+  gap: 1.5rem;
+
+  > div {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+}
+
+.pieChartWrapper {
+  display: flex;
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  width: 850px;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  background-color: var(--button-color, #ccc);
+  color: #000000;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &:active {
+    filter: brightness(0.95);
+  }
+}

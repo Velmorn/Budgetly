@@ -1,0 +1,34 @@
+package com.budgetly.utils;
+
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeMessage;
+import lombok.AllArgsConstructor;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.stereotype.Service;
+
+import java.io.UnsupportedEncodingException;
+
+@Service
+@AllArgsConstructor
+public class EmailService {
+    private final JavaMailSender mailSender;
+
+    public void sendEmail(String email, String subject, String content) {
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message);
+
+            helper.setFrom("budgetly.web.app@gmail.com", "Budgetly");
+            helper.setTo(email);
+
+            helper.setSubject(subject);
+            helper.setText(content, true);
+
+            mailSender.send(message);
+        } catch (MessagingException | UnsupportedEncodingException e) {
+            throw new RuntimeException("Failed to send a mail", e);
+        }
+    }
+
+}

@@ -1,0 +1,107 @@
+.card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    cursor: pointer;
+    width: 350px;
+    height: 120px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow:
+            0 2px 4px rgba(0, 0, 0, 0.1),
+            0 8px 16px rgba(0, 0, 0, 0.1),
+            0 16px 24px rgba(0, 0, 0, 0.05);
+
+}
+
+.topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.iconCircle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--goal-color, #ccc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameAndDate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.startDate {
+    font-size: 14px;
+    color: #888;
+}
+
+.middleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transactionsCount {
+    font-size: 14px;
+    color: #555;
+}
+
+.amountBlock {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.amount {
+    font-weight: 700;
+    font-size: 20px;
+
+    &.green {
+        color: green;
+    }
+}
+
+.targetAmount {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.progressSection {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: var(--goal-color, #6c63ff);
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.progressText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    pointer-events: none;
+}

@@ -1,0 +1,103 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.inputName{
+  width: 120%;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.iconNameLine {
+  display: flex;
+  gap: 20px;
+}
+
+.iconChangeButton {
+  align-items: center;
+  width: 130px;
+  height: 80px;
+  border: none;
+  border-radius: 12px;
+}
+
+.inputName:focus,
+.inputSum:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.inputName:hover,
+.inputSum:hover {
+  background-color: #f2f2f2;
+}
+
+.inputSum {
+  -webkit-appearance: none;
+  width: 40%;
+  font-size: 28px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  text-align: right;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.inputSum::-webkit-inner-spin-button,
+.inputSum::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sumField {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 88%;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sumWrapper {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  gap: 20px;
+  width: 100%;
+}
+
+
+.inputDate {
+  width: 40%;
+  font-size: 28px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  padding: 10px 0;
+}
+
+.inputDate:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.inputDate:hover {
+  background-color: #f2f2f2;
+}

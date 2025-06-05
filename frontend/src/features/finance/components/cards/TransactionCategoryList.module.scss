@@ -1,0 +1,74 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: background-color 0.2s;
+}
+
+.card:hover {
+  background-color: #eeeeee;
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.percent {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.right {
+  text-align: right;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.count {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.transactionListWrapper {
+  margin-top: 8px;
+  margin-left: 40px;
+}

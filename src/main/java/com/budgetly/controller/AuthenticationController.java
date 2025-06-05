@@ -1,9 +1,9 @@
 package com.budgetly.controller;
 
-import com.budgetly.dto.AuthenticationRequestBody;
-import com.budgetly.dto.AuthenticationResponseBody;
-import com.budgetly.entity.CurrencyData;
-import com.budgetly.entity.User;
+import com.budgetly.model.dto.AuthenticationRequestBody;
+import com.budgetly.model.dto.AuthenticationResponseBody;
+import com.budgetly.model.enums.CurrencyData;
+import com.budgetly.model.entity.User;
 import com.budgetly.service.AuthenticationService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

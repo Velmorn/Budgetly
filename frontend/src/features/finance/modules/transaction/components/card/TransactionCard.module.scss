@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+.iconWrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.info {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.amountBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.amount {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.iconIncome {
+  color: green;
+}
+
+.iconExpense {
+  color: red;
+}
+
+.noteIcon {
+  color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

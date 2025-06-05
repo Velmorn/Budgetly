@@ -1,0 +1,143 @@
+.formWrapper {
+    display: flex;
+    height: 550px;
+}
+
+.rightSideContainer,
+.leftSideContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    gap: 16px;
+}
+
+.transactionCard {
+    background-color: #ccc;
+    border-radius: 12px;
+    width: 650px;
+    height: 120px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.typeLine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+}
+
+.typeButton {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+}
+
+.typeButton.active {
+    background-color: inherit;
+    color: #000000;
+}
+
+.bottomRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.categoryButton {
+    flex: 0 0 48px;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.amountInput {
+    flex: 1;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    padding: 0 16px;
+    text-align: right;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+}
+.amountInput::-webkit-outer-spin-button,
+.amountInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputField {
+    border: none;
+    border-radius: 12px;
+    background-color: #eee;
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 95%;
+    outline: none;
+    text-align: left;
+    align-items: flex-start;
+
+}
+
+.noteInput {
+    height: 76px;
+    resize: none;
+}
+
+.dateContainer {
+ text-align: center;
+}
+
+.inputDate {
+    width: 40%;
+    font-size: 28px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    padding: 10px 0;
+}
+
+.inputDate:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.inputDate:hover {
+    background-color: #f2f2f2;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+.defaultBtn {
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    background-color: white;
+    padding: 6px;
+    margin: 4px;
+}

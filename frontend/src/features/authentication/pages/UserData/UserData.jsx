@@ -6,7 +6,7 @@ import axios from "axios";
 import AuthInput from "../../components/UI/Input/AuthInput.jsx";
 import AuthButton from "../../components/UI/Button/AuthButton.jsx";
 import Box from "../../components/UI/Box/Box.jsx";
-import CurrencyCardList from "../../../finance/bill/component/CurrencyCardList.jsx";
+import CurrencyCardList from "../../../finance/components/cards/CurrencyCardList.jsx";
 
 const UserData = () => {
     const navigate = useNavigate();
@@ -70,13 +70,13 @@ const UserData = () => {
                     value={data.username}
                     onChange={handleChange}
                 />
-                <label>Оберіть основну валюту </label>
+                <label style={{textAlign: "center"}}>Оберіть основну валюту </label>
                 <CurrencyCardList
                     selectedCurrency={data.mainCurrency}
                     onSelect={(code) => setData({ ...data, mainCurrency: code })}
                 />
                 {error && <p style={{ color: "red" }}>{error}</p>}
-                <AuthButton onClick={onSubmit}>Submit</AuthButton>
+                <AuthButton onClick={onSubmit}>Підтвердити</AuthButton>
             </Box>
         </div>
     );

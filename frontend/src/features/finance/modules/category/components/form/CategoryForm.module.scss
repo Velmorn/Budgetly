@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.inputName {
+  width: 80%;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.inputName:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.inputName:hover {
+  background-color: #f2f2f2;
+}
+
+.iconNameLine {
+  width: 650px;
+  display: flex;
+  gap: 16px;
+}
+.iconBtn{
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 8px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+

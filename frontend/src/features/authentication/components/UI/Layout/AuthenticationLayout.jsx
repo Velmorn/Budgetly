@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './AuthenticationLayout.module.scss';
 import {Outlet} from "react-router-dom";
-import Header from "../../header/Header.jsx";
+import Header from "../../../../../components/header/Header.jsx";
 
 const AuthenticationLayout = () => {
     return (

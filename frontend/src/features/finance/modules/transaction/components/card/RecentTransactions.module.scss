@@ -1,0 +1,57 @@
+.recentTransactions {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.tabBtn {
+  flex: 1;
+  padding: 0.7rem 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #8b8b8b;
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+
+  &:hover {
+    background-color: #ededed;
+  }
+
+  &.active {
+    background-color: #d9d9d9;
+    color: #000000;
+  }
+}
+
+.transactionList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+}
+
+.viewAllBtn {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  color: #7b7b7b;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #ededed;
+  }
+}

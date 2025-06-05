@@ -31,7 +31,7 @@ const VerifyEmail = () => {
             navigate("/");
         } catch (e) {
             console.log(e);
-            const message = e.response?.data?.message || "Щось пішло не так, будь ласска спробуйте знову";
+            const message = e.response?.data?.message || "Щось пішло не так, будь ласка спробуйте знову";
             setErrorMessage(message);
         } finally {
             setIsLoading(false);

@@ -1,7 +1,7 @@
 import React, {createContext, useContext, useEffect, useState} from 'react';
 import {Navigate, Outlet, useLocation} from "react-router-dom";
 import axios from "axios";
-import Loader from "../../../components/Loader.jsx";
+import Loader from "../../../components/loader/Loader.jsx";
 
 
 const AuthenticationContext = createContext(null);
@@ -93,10 +93,6 @@ const AuthenticationContextProvider = () => {
 
     if (user && !user.emailVerified && location.pathname !== "/authentication/verify-email") {
         return <Navigate to="/authentication/verify-email"/>;
-    }
-
-    if (user && user.emailVerified && isOnAuthPage) {
-        return <Navigate to="/"/>;
     }
 
     if (

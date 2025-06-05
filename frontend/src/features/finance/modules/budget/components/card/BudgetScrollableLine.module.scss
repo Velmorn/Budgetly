@@ -1,0 +1,27 @@
+.list {
+  padding: 15px;
+  width: 1360px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.content {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
+  padding-bottom: 8px;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.content:active {
+  cursor: grabbing;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}

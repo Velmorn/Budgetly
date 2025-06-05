@@ -1,0 +1,57 @@
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.labelGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.count {
+  color: #888;
+  font-weight: 400;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 12px;
+}
+
+.expenseAmount {
+  color: #e53935;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.incomeAmount {
+  color: #43a047;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
